@@ -38,7 +38,7 @@ public class Generics<T>
     /// </summary>
     /// <typeparam name="F"></typeparam>
     /// <param name="fTypeParamater"></param>
-    public void OnlyGenericMethod<F>(F fTypeParamater)
+    public void OnlyGenericMethod<F,R>(F fTypeParamater, R rTypeParameter)
     {
         Debug.Log(fTypeParamater.GetType().Name);
     }
