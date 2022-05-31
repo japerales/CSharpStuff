@@ -19,6 +19,20 @@ namespace delegates
         {
             Debug.Log("Another function showing " + val);
         }
+
+        public void Vector3Func(Vector3 v) {
+            Debug.Log(v);
+        }
+
+        //esta función recibe un delegado como parámetro. Es potente para implementar patrones como el strategy.
+        public void FunctWithParamDeleg(Function func) //aqui se le puede inyectar cualquier función
+        {
+            //hago cosas
+            func(3);
+
+            //hago otras cosas
+        }
     }
+
 
 }
