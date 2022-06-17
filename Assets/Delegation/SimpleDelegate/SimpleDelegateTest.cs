@@ -17,7 +17,11 @@ namespace delegates
             dlg.deleg += other2.AnyMatchingFunction2;
             //dlg.deleg = null; //vacía el delegate!
             dlg.deleg.Invoke(2); //deleg da una serie de funcionalidades y poderes...
+            
+            
+            
             dlg.OnFunction+= new OtherClass().AnyMatchingFunction;
+            
             //dlg.OnFunction = null; <-- no está permitido.
             /*dlg.AddFunction(new OtherClass().AnyMatchingFunction);
             dlg.AddFunction(new OtherClass().AnyMatchingFunction);
@@ -26,7 +30,7 @@ namespace delegates
             DelegateGeneric.OnFunctionGenericVector += other2.Vector3Func;
             DelegateGeneric.RaiseGenericVector();
             other2.FunctWithParamDeleg(ExampleWithInt);
-
+            
         }
 
 

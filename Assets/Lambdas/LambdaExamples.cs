@@ -12,7 +12,7 @@ public class LambdaExamples : MonoBehaviour
     Func<int,int,bool> testForEquality = (n1,n2) => n1==n2;
     Func<Vector3, Vector3, float, Vector3> GetPointFromLine = (Point, Dir, distance) => Point + Dir.normalized*distance;
     //Los action no devuelven nada
-    Action<string> sayHi = (name) => Debug.Log("Hi there, how are you " + name + "?");
+    Action<string> sayHi = name => Debug.Log("Hi there, how are you " + name + "?");
     //Los predicate hacen un check de una condición, devolviendo un boolean
     Predicate<int> checkAdult = (age) => age > 18;
     Func<Vector3, Vector3> Normalize;

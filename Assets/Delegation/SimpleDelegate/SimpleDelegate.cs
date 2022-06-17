@@ -11,14 +11,14 @@ namespace delegates
     public class SimpleDelegate
     {
 
-        public Function deleg; //variable de tipo foo, que es un delegate.
+        public Function deleg; //variable de tipo function, que es un delegate.
                                // Start is called before the first frame update
         public event Function OnFunction; //los event son un wrapper simple y directo que no permite inyectarle null.
         // Update is called once per frame
 
         public void RaiseEvent(int value)
         {
-            OnFunction(2);
+            deleg(2);
         }
 
         /// <summary>
